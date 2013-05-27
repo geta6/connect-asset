@@ -20,7 +20,7 @@ app.use(require('connect-asset')({...options...}));
 ### view (jade)
 
 ```
-link(rel='stylesheet', href='css/style.css')
+link(rel='stylesheet', href='/css/style.css')
 ```
 
 ### directories
@@ -36,7 +36,7 @@ app
 
 ## compilable
 
-* `stylus`
+* `stylus` with `nib`
 * `coffee-script`
 
 ## options
@@ -68,12 +68,13 @@ Default, `true`.
 #### `stylesheet: [extname]`
 target extension.
 
-Default, `.styl`.[^1]
+Default, `.styl`. [^1]
 
 #### `javascript: [extname]`
 target extension. 
 
-Default, `.coffee`.[^2]
+Default, `.coffee`. [^2]
+
 
 [^1]: `.styl` is ok, `styl` is ok too.
 [^2]: `.coffee` is ok, `coffee` is ok too.
