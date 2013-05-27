@@ -9,7 +9,7 @@
 ### server (nodejs)
 
 ```
-app.use(require('connect-asset'));
+app.use(require('connect-asset')());
 ```
 or
 ```
