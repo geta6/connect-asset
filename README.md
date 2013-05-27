@@ -1,5 +1,12 @@
 # connect-asset
 
+## features
+
+* coffee compilable
+* stylus with nib compilable
+* cluster ok
+* 302 responsible
+
 ## install
 
 `npm install connect-asset`
