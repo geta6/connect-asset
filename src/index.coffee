@@ -9,13 +9,18 @@ coffee = require 'coffee-script'
 stylus = require 'stylus'
 
 exports = module.exports = (config = {}) ->
+  if process.env.NODE_ENV is 'production'
+    config.builds or= yes
+    config.minify or= yes
+
   config.assets or= path.resolve 'assets'
   config.public or= path.resolve 'public'
   config.builds or= no   # builds ot public dir
-  config.minify or= yes  # minify result code
+  config.minify or= no   # minify result code
   config.update or= yes  # update with mtime check
   config.stylesheet or= '.styl'   # stylesheet extension
   config.javascript or= '.coffee' # javascript extension
+
 
   config.stylesheet = ".#{config.stylesheet}" unless '.' is config.stylesheet.substr 0, 1
   config.javascript = ".#{config.stylesheet}" unless '.' is config.stylesheet.substr 0, 1
