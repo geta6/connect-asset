@@ -82,6 +82,9 @@ target extension.
 
 Default, `.coffee`. [^2]
 
+## Roadmap
+
+* rewrite to module style
 
 [^1]: `.styl` is ok, `styl` is ok too.
 [^2]: `.coffee` is ok, `coffee` is ok too.
