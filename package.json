@@ -1,0 +1,23 @@
+{
+  "name": "connect-asset",
+  "version": "0.0.1",
+  "description": "connect middleware for asset compiler",
+  "tags": [],
+  "author": {
+    "name": "geta6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/geta6/connect-asset.git"
+  },
+  "dependencies": {
+    "coffee-script": "*",
+    "stylus": "*",
+    "nib": "*",
+    "uglify-js": "*",
+    "sqwish": "*"
+  },
+  "licenses": "MIT",
+  "main": "lib/index.js",
+  "readmeFilename": "README.md"
+}
